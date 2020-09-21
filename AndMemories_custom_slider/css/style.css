@@ -1,0 +1,60 @@
+ul,
+li,
+div{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.ticker-wrapper{
+    overflow: hidden;
+    width: 100%;
+}
+.ticker-wrapper * {
+  box-sizing: border-box;
+}
+
+.grid,
+.ticker{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.grid{
+    justify-content: space-between;
+}
+.carousel-image{
+    max-height: 300px;
+    
+}
+.grid-image,
+.ticker-image{
+    position: relative;
+    display: block;
+    height: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: 0 0; 
+
+}
+
+@media only screen and (max-width: 500px) {
+    .grid,
+    .ticker{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .grid-image,
+    .ticker-image{
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+        object-position: 0 0; 
+    }
+    
+}

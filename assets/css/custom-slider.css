@@ -1,0 +1,30 @@
+.slider-content{
+    position:relative;
+    height: 400px;
+    width: 100%;
+}
+.slider-content ul{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 0;
+    margin:0;
+}
+.slider-content ul li{
+    height: 100%;
+    width: auto;
+} 
+.slider-content ul li figure{
+    height: 100%;
+    width: auto;
+} 
+.slider-content ul li figure img{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    padding: 0;
+    margin:-10px;
+} 
