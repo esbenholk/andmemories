@@ -11,7 +11,7 @@
 ?>
 <div class="custom-animation">
 	<div class="animated-column no-text-column"></div>
-	<div class="animated-column"><p class="animation-text">The</p></div>
+	<div class="animated-column"><p class="animation-text">A</p></div>
 	<div class="animated-column"><p class="animation-text">never</p></div>
 	<div class="animated-column"><p class="animation-text">&</p></div>
 	<div class="animated-column"><p class="animation-text">ing</p></div>

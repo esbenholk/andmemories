@@ -16,8 +16,6 @@
 			<h2 class="header-text header-tag"><?php bloginfo( 'description' ); ?></h2>
 			<h2 class="header-text header-name"><?php bloginfo( 'name' ); ?></h2>
 	
-
-		
 		</div>
 
 		<?php if ( ( AndMemories_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>

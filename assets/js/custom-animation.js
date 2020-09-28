@@ -10,12 +10,16 @@
 (function( $ ) {
 
 	(function() {
+        start();
+    })();
+
+    function start(){
         let animated_columns = $(".animated-column")
 
         let siteHeader = $("#masthead")
         siteHeader.css("height", window.innerHeight +"px")
    
-        let RGBs = [[163, 213, 205],[73, 71, 150], [0, 148, 117],[139, 178, 76],[234, 88, 59], [248, 223, 0],[192, 218, 142],[244, 150, 67],[147, 169, 206],[230, 219, 206]]
+        let RGBs = [[163, 213, 205],[73, 71, 150], [0, 148, 117],[139, 178, 76],[234, 88, 59], [248, 223, 0],[192, 218, 142],[244, 150, 67],[147, 169, 206]]
 
         //set random rgb to column
             for (let index = 0; index < animated_columns.length; index++) {
@@ -34,22 +38,13 @@
             let last_known_scroll_position = 0;
 
             document.addEventListener("scroll", function(evt){
-               if(window.scrollY - last_known_scroll_position > 50 ||window.scrollY - last_known_scroll_position < -50){
+               if(window.scrollY - last_known_scroll_position > 35 ||window.scrollY - last_known_scroll_position < -35){
                 last_known_scroll_position = window.scrollY;
                 
                 let animated_columns = $(".animated-column");
                 let changingcolumn = animated_columns[Math.floor(Math.random()*animated_columns.length)]
                 
-                fade(changingcolumn, 20, 10);
-                // if(isInViewport(changingcolumn)){
-                //     console.log("shaking", changingcolumn);
-                //     fade(changingcolumn, 20, 10);
-                // } 
-
-              
-        
-                
-          
+                fade(changingcolumn, 20, 10);      
                }
                
             })
@@ -60,7 +55,15 @@
         }
 
 
-    })();
+    }
+
+    window.onresize = function(){
+        console.log("change function");
+        setTimeout(function(){
+           start();
+        }, 200)
+      
+    }
 
 
     // var isInViewport = function (elem) {
@@ -85,7 +88,7 @@
 
     function fade(element, step, time) {
 
-        let RGBs = [[163, 213, 205],[73, 71, 150], [0, 148, 117],[139, 178, 76],[234, 88, 59], [248, 223, 0],[192, 218, 142],[244, 150, 67],[147, 169, 206],[230, 219, 206]]
+        let RGBs = [[163, 213, 205],[73, 71, 150], [0, 148, 117],[139, 178, 76],[234, 88, 59], [248, 223, 0],[192, 218, 142],[244, 150, 67],[147, 169, 206]]
 
   
         currentcolor = element.style.backgroundColor.match(/\d+/g).map(Number);
@@ -118,13 +121,5 @@
        
      }
 
-    //function to call when shake occurs
-    function shakeEventDidOccur () {
-        let animated_columns = $(".animated-column")
-        let changingcolumn = animated_columns[Math.floor(Math.random()*animated_columns.length)]
-        fade(changingcolumn)
-        console.log("shaking");
-
-    
-     }
+ 
 })( jQuery );

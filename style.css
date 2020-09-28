@@ -438,7 +438,7 @@ button,
 input,
 select,
 textarea {
-	color: #333;
+	color: black;
 	font-family: 'Millenials';
 	font-size: 15px;
 	font-size: 0.9375rem;
@@ -482,14 +482,14 @@ h2,
 }
 
 h3 {
-	color: #333;
+	color: black;
 	font-size: 18px;
 	font-size: 1.125rem;
 	font-weight: 300;
 }
 
 h4 {
-	color: #333;
+	color: black;
 	font-size: 16px;
 	font-size: 1rem;
 	font-weight: 800;
@@ -505,15 +505,15 @@ h5 {
 }
 
 h6 {
-	color: #333;
+	color: black;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-weight: 800;
 }
 
 p {
-	/* margin: 0 0 1.5em; */
 	padding: 0;
+	font-size: 14px;
 }
 
 dfn,
@@ -943,7 +943,7 @@ html[lang="th"] * {
 --------------------------------------------------------------*/
 
 label {
-	color: #333;
+	color: black;
 	display: block;
 	font-weight: 800;
 	margin-bottom: 0.5em;
@@ -997,7 +997,7 @@ input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
 	color: #222;
-	border-color: #333;
+	border-color: black;
 }
 
 select {
@@ -1010,7 +1010,7 @@ select {
 
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-	outline: thin dotted #333;
+	outline: thin dotted black;
 }
 
 input[type="radio"],
@@ -1084,24 +1084,24 @@ input[type="submit"].secondary:focus {
 
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
-	color: #333;
+	color: black;
 	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 :-moz-placeholder {
-	color: #333;
+	color: black;
 	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 ::-moz-placeholder {
-	color: #333;
+	color: black;
 	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 	opacity: 1;
 	/* Since FF19 lowers the opacity of the placeholder by default */
 }
 
 :-ms-input-placeholder {
-	color: #333;
+	color: black;
 	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
@@ -1664,7 +1664,7 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 	padding-right: 48px;
-	max-width: 75%
+	max-width: 60%;
 }
 body.has-header-image .site-title,
 body.has-header-video .site-title,
@@ -1912,7 +1912,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
 .AndMemories-front-page .panel-content .recent-posts article {
 	border: 0;
-	color: #333;
+	color: black;
 	margin-bottom: 3em;
 }
 
@@ -1989,7 +1989,7 @@ body.page:not(.AndMemories-front-page) .entry-title {
 }
 
 .entry-title a {
-	color: #333;
+	color: black;
 	text-decoration: none;
 	margin-left: -2px;
 }
@@ -2224,7 +2224,7 @@ body:not(.AndMemories-front-page) .entry-header {
 
 .entry-footer .cat-links a,
 .entry-footer .tags-links a {
-	color: #333;
+	color: black;
 }
 
 .entry-footer .cat-links .icon,
@@ -2273,7 +2273,7 @@ body:not(.AndMemories-front-page) .entry-header {
 }
 
 .format-quote blockquote {
-	color: #333;
+	color: black;
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-weight: 300;
@@ -2316,7 +2316,7 @@ body:not(.AndMemories-front-page) .entry-header {
 }
 
 .nav-title {
-	color: #333;
+	color: black;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -2409,7 +2409,7 @@ body:not(.AndMemories-front-page) .entry-header {
 
 .social-navigation a:hover,
 .social-navigation a:focus {
-	background-color: #333;
+	background-color: black;
 }
 
 .social-navigation .icon {
@@ -2519,7 +2519,7 @@ body:not(.AndMemories-front-page) .entry-header {
 }
 
 .comment-body {
-	color: #333;
+	color: black;
 	font-size: 14px;
 	font-size: 0.875rem;
 	margin-bottom: 4em;
@@ -2546,7 +2546,7 @@ body:not(.AndMemories-front-page) .entry-header {
 }
 
 .bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
-	border: 1px solid #333;
+	border: 1px solid black;
 	padding: 2px;
 }
 
@@ -2988,7 +2988,7 @@ p > object:only-child {
 }
 
 .site-content .wp-playlist-light .wp-playlist-current-item .wp-playlist-item-album {
-	color: #333;
+	color: black;
 }
 
 .site-content .wp-playlist-light .wp-playlist-current-item .wp-playlist-item-artist {
@@ -3018,11 +3018,11 @@ p > object:only-child {
 
 .site-content .wp-playlist-dark {
 	background: #222;
-	border-color: #333;
+	border-color: black;
 }
 
 .site-content .wp-playlist-dark .mejs-container .mejs-controls {
-	background-color: #333;
+	background-color: black;
 }
 
 .site-content .wp-playlist-dark .wp-playlist-caption {
@@ -3038,7 +3038,7 @@ p > object:only-child {
 }
 
 .site-content .wp-playlist-dark .wp-playlist-playing {
-	background-color: #333;
+	background-color: black;
 }
 
 .site-content .wp-playlist-dark .wp-playlist-item {
@@ -4289,7 +4289,11 @@ p > object:only-child {
 	/* Font sizes */
 
 	body {
-		font-size: 12pt;
+		font-size: 11pt;
+	}
+
+	p{
+		font-size: 14px;
 	}
 
 	h1 {
@@ -4324,11 +4328,7 @@ p > object:only-child {
 
 	/* Layout */
 
-	.wrap {
-		/* padding-left: 5% !important;
-		padding-right: 5% !important;
-		max-width: none; */
-	}
+
 
 	/* Site Branding */
 
@@ -4415,6 +4415,13 @@ p > object:only-child {
     .animation-text{
 		font-size: 10px;
 	}
+
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
 	.site-footer,
 	.site-headline,
 	.site-main p{
@@ -4425,5 +4432,3 @@ p > object:only-child {
 		max-width: 100%
 	}
 }
-
-
