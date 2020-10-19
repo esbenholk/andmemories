@@ -53,7 +53,7 @@
             $('.carousel').slick({
                 dots: false,
                 infinite: true,
-                speed: 4000,
+                speed: 2000,
                 slidesToShow: 1,
                 centerMode: true,
                 variableWidth: true,

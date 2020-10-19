@@ -1665,6 +1665,7 @@ body {
 	margin-right: 0;
 	padding-right: 48px;
 	max-width: 60%;
+	color: black;
 }
 body.has-header-image .site-title,
 body.has-header-video .site-title,

@@ -57,24 +57,14 @@
 
     }
 
-    window.onresize = function(){
-        console.log("change function");
+    // window.onresize = function(){
+    //     console.log("change function");
         setTimeout(function(){
            start();
         }, 200)
       
-    }
+    // }
 
-
-    // var isInViewport = function (elem) {
-    //     var bounding = elem.getBoundingClientRect();
-    //     return (
-    //         bounding.top >= 0 &&
-    //         bounding.left >= 0 &&
-    //         bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    //         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-    //     );
-    // };
 
 
     function addEventstoColumns(){
@@ -82,7 +72,11 @@
         for (let index = 0; index < animated_columns.length; index++) {
             const element = animated_columns[index];
             //mousover change color
-            element.addEventListener("mouseover", evt => fade(evt.target, 20, 10));
+            element.addEventListener("mouseover", evt => 
+            // setTimeout(fade(evt.target, 5,15),200)
+            fade(evt.target, 5,15)
+            )
+            
         }
     }
 
