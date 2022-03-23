@@ -11,22 +11,18 @@
 ?>
 	<?php
 	
-	$instagram = get_field('instagram', 54);
-	$shop = get_field( "shop", 54);
-	$email = get_field( "email", 54);
+	$instagram = get_field('instagram', 2);
+	$shop = get_field( "shop", 2);
+	$email = get_field( "email", 2);
 	?> 
 
 
 
 
 	<div class="social-links">
-		<?php if( $email ): ?>
-		<a> 
-			<form id="fr1" >
-				<p id="custom_email" style="display:none"><?php echo esc_url( $email ); ?></p>
-				<img id="bt1" src="/wp-content/themes/andmemories/assets/icons/mail.png"/> 
-			</form>
-		</a>
+
+		<?php if( $email): ?>
+				<a class="button" href="mailto:<?php echo esc_url(  $email); ?>"><img src="/wp-content/themes/andmemories/assets/icons/mail.png"/></a>
 		<?php endif; ?>
 		
 		<?php if( $shop): ?>
@@ -39,7 +35,7 @@
 		<?php endif; ?>
 	
 
-		
+
 
 	</div>
 
