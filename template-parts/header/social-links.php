@@ -22,7 +22,7 @@
 	<div class="social-links">
 
 		<?php if( $email): ?>
-				<a class="button" href="mailto:<?php echo esc_url(  $email); ?>"><img src="/wp-content/themes/andmemories/assets/icons/mail.png"/></a>
+				<a class="button" href="mailto:<?php echo $email?>"><img src="/wp-content/themes/andmemories/assets/icons/mail.png"/></a>
 		<?php endif; ?>
 		
 		<?php if( $shop): ?>
